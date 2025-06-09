@@ -91,13 +91,16 @@ Data pelatihan disimpan di `training/resume_data.csv` dan model hasil training a
 
 ```txt
 streamlit
-openai
+pyngrok
+langchain
+langchain-groq
+chromadb
+sentence-transformers
+pymupdf
+python-dotenv
 pdfplumber
 pandas
-joblib
-python-dotenv
 matplotlib
-scikit-learn
 ```
 
 ---
