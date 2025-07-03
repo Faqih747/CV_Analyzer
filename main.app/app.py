@@ -5,15 +5,17 @@ import pdfplumber
 import pandas as pd
 from openai import OpenAI
 from dotenv import load_dotenv
+import os
 
-# Load .env
 load_dotenv()
 
-# Ambil API Key dari environment
+api_key = os.getenv("GROQ_API_KEY")
+
 client = OpenAI(
-    api_key="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",
+    api_key=api_key,
     base_url="https://api.groq.com/openai/v1"
 )
+
 
 def extract_features(cv_text):
     return {
